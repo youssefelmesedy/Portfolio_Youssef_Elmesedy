@@ -990,4 +990,53 @@ body {
     .hamburger {
         display: flex;
     }
+
+    /* Extra Small Devices - أقل من 576px تقريبًا */
+@media (max-width: 576px) {
+    /* Hero Section */
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: 4rem 1rem;
+        gap: 2rem;
+    }
+
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr; /* كارت واحد في الصف */
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    /* Project Card */
+    .project-card img {
+        height: 180px; /* أقل شوي للصور */
+    }
+
+    /* Hero Profile Image */
+    .profile-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Social Icons */
+    .hero-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
 }
