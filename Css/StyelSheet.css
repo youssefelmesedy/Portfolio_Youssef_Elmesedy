@@ -868,14 +868,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.section-subtitle {
-    color: #9ca3af;
-    margin: 0.5rem 0 2rem 0; /* top 0.5rem, bottom 2rem */
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-
 .contact-card {
     max-width: 600px;
     margin: auto;
