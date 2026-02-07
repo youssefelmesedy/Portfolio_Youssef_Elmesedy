@@ -309,37 +309,20 @@ body {
     transition: var(--transition);
 }
 
-/* Facebook */
 .hero-social a.facebook:hover {
     background: #1877f2;
 }
-
-/* GitHub */
 .hero-social a.github:hover {
     background: linear-gradient(135deg, #333, #000);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
-/* LinkedIn */
 .hero-social a.linkedin:hover {
     background: linear-gradient(135deg, #0a66c2, #004182);
     box-shadow: 0 10px 25px rgba(10, 102, 194, 0.45);
 }
-
-/* WhatsApp */
-.hero-social a.whatsapp:hover {
-    background: #25d366;
-}
-
-/* Telegram */
-.hero-social a.telegram:hover {
-    background: #0088cc;
-}
-
-/* YouTube */
-.hero-social a.youtube:hover {
-    background: #ff0000;
-}
+.hero-social a.whatsapp:hover { background: #25d366; }
+.hero-social a.telegram:hover { background: #0088cc; }
+.hero-social a.youtube:hover { background: #ff0000; }
 
 .hero-social a:hover {
     background: var(--primary);
@@ -370,7 +353,7 @@ body {
 
 .phone-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(67, 206, 162, 0.45);
+    box-shadow: 0 12px 30px rgba(67,206,162,0.45);
 }
 
 /* Profile Wrapper (Gradient Ring) */
@@ -694,48 +677,25 @@ body {
   border-radius: 2px;
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-/* Project Card */
-.project-card {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: all 0.4s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
-}
-
-/* Project Image */
-.project-image img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
-/* =====================
-   Projects Grid
-===================== */
+/* Projects Grid Responsive */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 كروت في الديسكتوب */
     gap: 2rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 كارت في الصف */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* كارت واحد في الصف */
+    }
 }
 
 /* Project Card */
@@ -837,19 +797,6 @@ body {
 .btn:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 25px rgba(59,130,246,0.5);
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* =====================
@@ -972,7 +919,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* =====================
    Scroll To Top
